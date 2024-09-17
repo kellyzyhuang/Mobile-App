@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import Profile from "@/components/molecules/Profile"; 
 
 export default function Index() {
   return (
@@ -9,7 +10,12 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+
+      <Profile
+        nameText="Kelly Huang"
+        bioText="I am a student in the D3 program in the faculty of Business & Media at BCIT."
+      />
+      
     </View>
   );
 }
